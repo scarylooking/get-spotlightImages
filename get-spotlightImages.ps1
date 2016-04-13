@@ -11,6 +11,6 @@ for($i = 0; $i -lt $File.Count; $i++)
 {
    if ($File[$i].Length -gt 250000)
    {
-    Copy-Item $File[$i].FullName ($outputPath + "\" + $File[$i].BaseName + $i +".jpg");
+    Copy-Item $File[$i].FullName ($outputPath + "\" + $File[$i].BaseName + ".jpg");
    }
 }
